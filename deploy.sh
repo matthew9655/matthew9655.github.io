@@ -9,5 +9,5 @@ cd dist
 # echo 'www.example.com' > CNAME
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:matthew9655/matthew9655.github.io.git master:gh-pages
+git push -f git@github.com:matthew9655/matthew9655.github.io.git main:gh-pages
 cd -
