@@ -33,6 +33,7 @@ export default {
     align-items: center;
     width: 50%;
     height: 25%;
+    margin-bottom: 40px;
 }
 #image {
     border-radius: 50%;
