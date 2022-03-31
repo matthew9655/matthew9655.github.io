@@ -1,12 +1,7 @@
 <template>
   <div id="main-box">
-    <img id="image" src="../assets/face.jpg">
-    <div id="name">{{ texts.name }}</div>
-    <div id="about">{{ texts.about1 }}</div>
-    <br/>
-    <div id="about">{{ texts.about2 }}</div>
-    <br/>
-    <div id="about">{{ texts.about3 }}</div>
+    <p>Blog</p>
+    <BlogCard :imageUrl="'face.jpg'" :text="'this is blog 1'"/>
 
   </div>
 </template>
@@ -14,9 +9,13 @@
 <script>
 
 import texts from '../texts/texts.js';
+import BlogCard from '../components/BlogCard.vue';
 
 export default {
     name: 'About',
+    components: {
+      BlogCard: BlogCard,
+    },
     data() {
         return {
             texts: texts,
@@ -31,6 +30,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 50%;
     height: 25%;
     margin-bottom: 40px;

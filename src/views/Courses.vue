@@ -1,25 +1,27 @@
 <template>
   <div id="main-box">
-    <img id="image" src="../assets/face.jpg">
-    <div id="name">{{ texts.name }}</div>
-    <div id="about">{{ texts.about1 }}</div>
-    <br/>
-    <div id="about">{{ texts.about2 }}</div>
-    <br/>
-    <div id="about">{{ texts.about3 }}</div>
+    <p>Courses</p>
+    <p>First Year</p>
+    <div id="course-box" v-for="(description, course) in firstYearCourses" :key="course">
+        {{ course }} : {{description}}
+    </div>
 
   </div>
 </template>
 
 <script>
 
-import texts from '../texts/texts.js';
+import { firstYearCourses } from '../texts/coursesTexts.js';
+// import BlogCard from '../components/BlogCard.vue';
 
 export default {
-    name: 'About',
+    name: 'Courses',
+    // components: {
+    //   BlogCard: BlogCard,
+    // },
     data() {
         return {
-            texts: texts,
+            firstYearCourses: firstYearCourses,
         };
     },
 };
@@ -30,10 +32,13 @@ export default {
 #main-box{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 50%;
     height: 25%;
     margin-bottom: 40px;
+    font-size:15px;
+}
+#course-box {
+    text-align: left;
 }
 #image {
     border-radius: 50%;

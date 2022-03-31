@@ -2,9 +2,9 @@
   <div id="main-header">
     <div id=sub-header>About</div>
     <div id="sub-header" @click="scroll('paper-header')">Papers</div>
-    <div id="sub-header">Projects</div>
-    <div id="sub-header">Blog</div>
-    <div id="sub-header">Contact Me</div>
+    <div id="sub-header" @click="scroll('projects-header')">Projects</div>
+    <div id="sub-header" @click=" () => { this.$router.push('blog') }">Blog</div>
+    <div id="sub-header" @click=" () => { this.$router.push('courses') }">Courses</div>
   </div>
 </template>
 
@@ -18,7 +18,11 @@ export default {
         scroll(refName) {
             let element = document.getElementById(refName);
             let top = element.offsetTop;
-            window.scrollTo(0, top);
+            window.scrollTo({
+                top: top,
+                left: 0,
+                behavior: 'smooth'
+            });
         }
     },
 }

@@ -12,7 +12,7 @@
 import texts from '../texts/texts.js';
 
 export default {
-    name: 'Card',
+    name: 'BlogCard',
     data() {
         return {
             texts: texts,
@@ -32,7 +32,7 @@ export default {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    height: 5%;
+    height: 10%;
     margin: 2% 0 2% 0;
 }
 #image {

@@ -1,8 +1,8 @@
 <template>
-  <div id="main-projects-box">
-    <div id="projects-header">Projects</div>
-    <div id="projects">
-        <Card :imageUrl="'face.jpg'" :text="'this is project 1'"/>
+  <div id="main-extras-box">
+    <div id="extras-header">Extras</div>
+    <div id="extras">
+        <Card :imageUrl="'face.jpg'" :text="'this is extras 1'"/>
     </div>
   </div>
 </template>
@@ -13,7 +13,7 @@ import texts from '../texts/texts.js';
 import Card from './Card.vue';
 
 export default {
-    name: 'Projects',
+    name: 'Extras',
     data() {
         return {
             texts: texts,
@@ -27,16 +27,16 @@ export default {
 </script>
 
 <style scoped>
-#main-projects-box {
+#main-extras-box {
     width: 50%;
     height: 25%;
 }
-#projects-header {
+#extras-header {
     font-size: 30px;
     font-weight: bold;
     display: flex;
 }
-#projects{
+#extras {
     display: flex;
     flex-direction: column;
     align-items: center;

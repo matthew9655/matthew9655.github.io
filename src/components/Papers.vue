@@ -9,7 +9,7 @@
 
 <script>
 
-import texts from '../texts.js';
+import texts from '../texts/texts.js';
 import Card from './Card.vue';
 
 export default {
