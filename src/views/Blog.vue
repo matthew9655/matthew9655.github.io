@@ -8,7 +8,7 @@
 
 <script>
 
-import texts from '../texts/texts.js';
+import texts from '../texts/aboutTexts.js';
 import BlogCard from '../components/BlogCard.vue';
 
 export default {

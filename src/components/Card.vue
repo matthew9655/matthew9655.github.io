@@ -9,7 +9,7 @@
 
 <script>
 
-import texts from '../texts/texts.js';
+import texts from '../texts/aboutTexts.js';
 
 export default {
     name: 'Card',
