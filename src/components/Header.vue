@@ -3,7 +3,7 @@
     <div id=sub-header @click=" () => { this.$router.push('/') }">Home</div>
     <div id="sub-header" @click=" () => { this.$router.push('papers') }">Papers</div>
     <div id="sub-header" @click=" () => { this.$router.push('extras') }">Extras</div>
-    <a id="sub-header" href="/files/cv.pdf" download>CV</a>
+    <a id="sub-header" target="_blank" href="/files/cv.pdf">CV</a>
   </div>
 </template>
 
