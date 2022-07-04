@@ -1,6 +1,6 @@
 <template>
   <div id="papers">
-    <Header/>
+    <Options/>
     <div id="main-box">
         <div id="paper-box" v-for="paper in texts" :key="paper.two">
         <p> {{ paper.one }}<span class="emphasized"> {{ paper.two }}</span> {{ paper.three }}
@@ -15,13 +15,13 @@
 
 <script>
 
-import Header from '../components/Header.vue';
+import Options from '../components/Options.vue';
 import papersTexts from '@/texts/papersTexts.js';
 
 export default {
-  name: 'Papers',
+  name: 'PapersView',
   components: {
-    Header,
+    Options,
   },
   data() {
     return {

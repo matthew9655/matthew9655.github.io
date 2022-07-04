@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Header/>
+    <Options/>
     <!-- <Slider/> -->
     <About/>
   </div>
@@ -8,14 +8,14 @@
 
 <script>
 
-import Header from '../components/Header.vue';
+import Options from '../components/Options.vue';
 // import Slider from '../components/Slider.vue';
 import About from '../components/About.vue';
 
 export default {
-  name: 'Home',
+  name: 'HomeView',
   components: {
-    Header,
+    Options,
     // Slider,
     About,
   }

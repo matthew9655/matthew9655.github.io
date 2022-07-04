@@ -21,7 +21,7 @@
 import texts from '../texts/aboutTexts.js';
 
 export default {
-    name: 'About',
+    name: 'AboutMe',
     data() {
         return {
             texts: texts,

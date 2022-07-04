@@ -1,6 +1,6 @@
 <template>
   <div id="papers">
-    <Header/>
+    <Options/>
     <div id="main-box">
         <p id="type-header">Internships</p>
         <div id="paper-box" v-for="internship in internships" :key="internship.title">
@@ -25,14 +25,14 @@
 
 <script>
 
-import Header from '../components/Header.vue';
+import Options from '../components/Options.vue';
 import internshipsTexts from '@/texts/internshipsTexts.js';
 import projectsTexts from '@/texts/projectsTexts.js';
 
 export default {
-  name: 'Extras',
+  name: 'ExtrasView',
   components: {
-    Header,
+    Options,
   },
   data() {
     return {

@@ -13,7 +13,7 @@ import texts from '../texts/aboutTexts.js';
 import Card from './Card.vue';
 
 export default {
-    name: 'Papers',
+    name: 'PapersComp',
     data() {
         return {
             texts: texts,

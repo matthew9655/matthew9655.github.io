@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name: 'Header',
+    name: 'OptionsComp',
     props: {
     msg: String
     },
