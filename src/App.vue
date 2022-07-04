@@ -4,6 +4,18 @@
   </div>
 </template>
 
+<!-- <script>
+export default {
+    name: 'App',
+    data() {
+        return {
+            texts: texts,
+        };
+    },
+};
+</script> -->
+
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap');
 

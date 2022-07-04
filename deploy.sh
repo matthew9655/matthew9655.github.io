@@ -10,5 +10,6 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
+echo 'committed'
 git push -f git@github.com:matthew9655/matthew9655.github.io.git main:gh-pages
 cd -

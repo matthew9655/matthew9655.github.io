@@ -4,14 +4,14 @@
     v-model="value"
     width="200px"
     track-color="#89ABE3FF"
-    color="#2c3e50"
-    step=50
+    color="#D3D3D3"
+    step="100"
     sticky="true"></vue3-slider>
   </div>
 </template>
 
 <script>
-
+import { mapGetters, mapMutations } from 'vuex';
 import slider from 'vue3-slider';
 
 export default {
@@ -21,9 +21,39 @@ export default {
     },
     data: function() {
         return {
-            value: 50,
-            // data: ['dark', 'normal', 'blind']
+            value: 0,
         }
+    },
+    // getSliderState(state) {
+    //         return state.sliderState;
+    //     },
+    //     getBackgroundColor(state) {
+    //         return state.backgroundColorHex;
+    //     },
+    //     getHighlightWordColor(state) {
+    //         return state.highlightWordColorHex;
+    //     },
+    //     getTextWordColor(state) {
+    //         return state.textWordColorHex;
+    //     },
+    computed: {
+        ...mapGetters({
+            sliderState: 'getSliderState',
+            backgroundColorHex: 'getBackgroundColor',
+            textWordColor: 'getTextWordColor',
+            highlightWordHex: 'getHighlightWord',
+        }),
+        ...mapMutations({
+            
+        }),
+        changeColorScheme() {
+            if (this.value === 100) {
+                console.log('color change here');
+                return null;
+            }
+            return null;
+        }
+
     }
 }
 </script>

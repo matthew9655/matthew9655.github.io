@@ -3,9 +3,9 @@
     <img id="image" src="../assets/face.jpg">
     <div id="text-box">
         <div id="name">{{ texts.name }}</div>
-        <div id="about">{{ texts.about1 }}</div>
+        <div id="about1">{{ texts.about1 }}</div>
         <br/>
-        <div id="about">{{ texts.about2 }}</div>
+        <div id="about2">{{ texts.about2 }}</div>
         <br/>
         <div id="main-header">
             <a id="sub-header" target="_blank" href="https://twitter.com/matt_choi_cs">Twitter</a>
@@ -34,7 +34,7 @@ export default {
 <style scoped>
 #main-box{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     width: 70%;
     height: 25%;
@@ -53,22 +53,33 @@ export default {
     min-width: 140px;
     max-width: 270px;
     width: 30%;
-    margin-right: 30px;
+    margin-bottom: 20px;
 }
 #name {
     width: 100%;
     height: 20%;
     font-size: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #89ABE3FF;
 }
-#about {
+#about1 {
     height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#about2 {
+    height: 50%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
 }
+
 #main-header {
     display: flex;
     flex-direction: row;

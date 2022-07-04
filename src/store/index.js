@@ -4,9 +4,24 @@ const store = createStore({
     state () {
         return {
             sliderState: 'normal',
-            backgroundColorHex: '#000000',
-            wordColorHex: '#FFFFFF',
+            backgroundColorHex: '#FCF6F5FF',
+            highlightWordColorHex: '#89ABE3FF',
+            textWordColorHex: '#000000',
         }
+    },
+    getters: {
+        getSliderState(state) {
+            return state.sliderState;
+        },
+        getBackgroundColor(state) {
+            return state.backgroundColorHex;
+        },
+        getHighlightWordColor(state) {
+            return state.highlightWordColorHex;
+        },
+        getTextWordColor(state) {
+            return state.textWordColorHex;
+        },
     },
     mutations: {
         setSliderState (state, newState) {
@@ -21,8 +36,11 @@ const store = createStore({
         udpateBackgroundColor (state, newColor) {
             state.backgroundColorHex = newColor;
         },
-        updateWordColor (state, newColor) {
-            state.wordColorHex = newColor;
+        updateTextWordColor (state, newColor) {
+            state.textWordColorHex = newColor;
+        },
+        updatehighlightWordColorHex (state, newColor) {
+            state.highlightWordColorHex = newColor;
         }
     },
 })
