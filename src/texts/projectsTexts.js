@@ -1,6 +1,7 @@
 const projectsTexts = {
     project1: {
         "title": "Capstone Project: Self-driving cars",
+        "link": "https://github.com/matthew9655/csc490-projects",
         "description1": "investigated the use of focal loss and elliptical heatmaps to improve object detection.",
         "description2": "investigated the use of linear interpolation and cost based track matching for occulusion handling."
     },

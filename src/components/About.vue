@@ -3,14 +3,22 @@
     <img id="image" src="../assets/face.jpg">
     <div id="text-box">
         <div id="name">{{ texts.name }}</div>
-        <div id="about1">{{ texts.about1 }}</div>
+        <div id="about1box">
+            <div>
+                {{ texts.about11 }}
+                <a id="sublink" target="_blank" :href="texts.link1">Vector Institute</a>
+                {{ texts.about12 }}
+                <a id="specialsublink" target="_blank" :href="texts.link2">University of Toronto</a>
+                {{ texts.about13 }}
+            </div>
+        </div>
         <br/>
         <div id="about2box">
             <div id="about2text">
                 {{ texts.about21 }}
-                <a id="sublink" target="_blank" :href="texts.link1">Alán Aspuru-Guzik</a>
+                <a id="sublink" target="_blank" :href="texts.link3">Alán Aspuru-Guzik</a>
                 {{ texts.about22 }}
-                <a id="sublink" target="_blank" :href="texts.link2">Modiface</a>
+                <a id="sublink" target="_blank" :href="texts.link4">Modiface</a>
                 {{ texts.about23 }}
                 <br/>
             </div>
@@ -70,13 +78,17 @@ export default {
     margin-bottom: 20px;
     color: #89ABE3FF;
 }
-#about1 {
+#about1box {
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 10px;
+}
+
+#about1text {
+    text-align: left;
 }
 
 #about2box {
@@ -112,5 +124,10 @@ export default {
 #sublink {
     height: 100%;
     cursor: pointer;
+}
+#specialsublink {
+    height: 100%;
+    cursor: pointer;
+    margin-right: -3px;
 }
 </style>

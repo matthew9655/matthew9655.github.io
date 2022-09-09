@@ -20,8 +20,9 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap');
 
 html, body {
-  background-color: #FCF6F5FF;
+  background-color: #FCF9F9FF;
 }
+
 
 #app {
   font-family: 'Karla', sans-serif;
@@ -38,8 +39,9 @@ html, body {
 
 a {
   text-decoration: none;
+  color: #265396;
 }
 a:visited {
-  color: #89ABE3FF;
+  color: #265396;
 }
 </style>
