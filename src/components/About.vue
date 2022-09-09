@@ -5,11 +5,19 @@
         <div id="name">{{ texts.name }}</div>
         <div id="about1">{{ texts.about1 }}</div>
         <br/>
-        <div id="about2">{{ texts.about2 }}</div>
-        <br/>
-        <div id="main-header">
-            <a id="sub-header" target="_blank" href="https://twitter.com/matt_choi_cs">Twitter</a>
-            <a id="sub-header" target="_blank" href="https://github.com/matthew9655">Github</a>
+        <div id="about2box">
+            <div id="about2text">
+                {{ texts.about21 }}
+                <a id="sublink" target="_blank" :href="texts.link1">Alán Aspuru-Guzik</a>
+                {{ texts.about22 }}
+                <a id="sublink" target="_blank" :href="texts.link2">Modiface</a>
+                {{ texts.about23 }}
+                <br/>
+            </div>
+        </div>
+        <div id="socials">
+            <a id="link" target="_blank" href="https://twitter.com/matt_choi_cs">Twitter</a>
+            <a id="link" target="_blank" href="https://github.com/matthew9655">Github</a>
         </div>
     </div>
     
@@ -59,7 +67,7 @@ export default {
     width: 100%;
     height: 20%;
     font-size: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #89ABE3FF;
 }
 #about1 {
@@ -71,28 +79,37 @@ export default {
     margin-bottom: 10px;
 }
 
-#about2 {
+#about2box {
     height: 50%;
-    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 95%;
+}
+
+#about2text {
     text-align: left;
 }
 
-#main-header {
+
+#socials {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 10%;
+    margin-top: 20px;
     margin-bottom: 60px;
     right: 5%;
     color: #89ABE3FF;
 }
-#sub-header {
+#link {
     margin: 0px 10px 0px 10px;
+    height: 100%;
+    cursor: pointer;
+}
+#sublink {
     height: 100%;
     cursor: pointer;
 }

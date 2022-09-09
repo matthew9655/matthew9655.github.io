@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <Options/>
-    <!-- <Slider/> -->
     <About/>
   </div>
 </template>
