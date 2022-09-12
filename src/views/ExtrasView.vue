@@ -8,11 +8,11 @@
           <ul> <li> {{internship.description}} </li> </ul>
           <br/>
         </div>
-        <br/>
 
         <p id="type-header">Projects</p>
         <div id="paper-box" v-for="project in projects" :key="project.title">
-          <p id="bold">{{ project.title }}</p>
+          <a v-if="project.link !== ''" id="sublink" target="_blank" :href="project.link">{{ project.title }}</a>
+          <p v-if="project.link ===''" id="bold">{{ project.title }}</p>
           <ul>
             <li>{{ project.description1 }}</li>
             <li v-if="project.description2 !== ''"> {{ project.description2 }}</li>
@@ -65,6 +65,7 @@ export default {
     height: 100%;
     color: #89ABE3FF;
     text-align: left;
+    font-weight: bold;
 }
 #note {
     text-align: left;
@@ -72,6 +73,12 @@ export default {
 #bold {
   font-weight: bold;
   text-align: left;
+}
+
+#sublink {
+    height: 100%;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 </style>
