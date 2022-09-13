@@ -26,6 +26,7 @@
         <div id="socials">
             <a id="link" target="_blank" href="https://twitter.com/matt_choi_cs">Twitter</a>
             <a id="link" target="_blank" href="https://github.com/matthew9655">Github</a>
+            <a id="link" target="_blank" href="https://www.linkedin.com/in/matthew-choi-623aa0167/">LinkedIn</a>
         </div>
     </div>
     
@@ -80,6 +81,7 @@ export default {
 }
 #about1box {
     height: 50%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +104,6 @@ export default {
 #about2text {
     text-align: left;
 }
-
 
 #socials {
     display: flex;

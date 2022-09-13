@@ -2,12 +2,12 @@
   <div id="papers">
     <Options/>
     <div id="main-box">
-        <p id="type-header">Internships</p>
+        <!-- <p id="type-header">Internships</p>
         <div id="paper-box" v-for="internship in internships" :key="internship.title">
           <p id="bold">{{ internship.title }}</p>
           <ul> <li> {{internship.description}} </li> </ul>
           <br/>
-        </div>
+        </div> -->
 
         <p id="type-header">Projects</p>
         <div id="paper-box" v-for="project in projects" :key="project.title">
@@ -16,6 +16,17 @@
           <ul>
             <li>{{ project.description1 }}</li>
             <li v-if="project.description2 !== ''"> {{ project.description2 }}</li>
+          </ul>
+          <br/>
+        </div>
+
+        <p id="type-header">Extracurriculars</p>
+        <div id="paper-box" v-for="extra in extracurriculars" :key="extra.title">
+          <a v-if="extra.link !== ''" id="sublink" target="_blank" :href="extra.link">{{ extra.title }}</a>
+          <p v-if="extra.link ===''" id="bold">{{ extra.title }}</p>
+          <ul>
+            <li>{{ extra.description1 }}</li>
+            <li v-if="extra.description2 !== ''"> {{ extra.description2 }}</li>
           </ul> 
         </div>
         <br/>
@@ -28,6 +39,7 @@
 import Options from '../components/Options.vue';
 import internshipsTexts from '@/texts/internshipsTexts.js';
 import projectsTexts from '@/texts/projectsTexts.js';
+import extracurricularTexts from '@/texts/extracurricularTexts.js';
 
 export default {
   name: 'ExtrasView',
@@ -38,6 +50,7 @@ export default {
     return {
         projects: projectsTexts,
         internships: internshipsTexts,
+        extracurriculars: extracurricularTexts,
     };
   },
 }
@@ -52,7 +65,7 @@ export default {
   align-items: center;
 }
 #main-box{
-    width: 38%;
+    width: 50%;
     height: 30%;
 }
 #paper-box {

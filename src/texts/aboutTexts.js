@@ -1,8 +1,8 @@
 const texts = {
     "name": "Matthew Choi",
-    "about11": "I am currently pursuing a CS Masters degree at the ",
+    "about11": "I am currently pursuing a Master's degree in Computer Science at the ",
     // Vector Institute 
-    "about12": "and ", 
+    "about12": "and the ", 
     // University of Toronto,
     "about13": ".",
     "about21": "I am fortunate enough to work with ",
