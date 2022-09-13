@@ -39,9 +39,9 @@ html, body {
 
 a {
   text-decoration: none;
-  color: #265396;
+  color: #89ABE3FF;
 }
 a:visited {
-  color: #265396;
+  color: #89ABE3FF;
 }
 </style>

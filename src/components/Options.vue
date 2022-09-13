@@ -43,6 +43,6 @@ export default {
     margin: 0px 10px 0px 10px;
     height: 100%;
     cursor: pointer;
-    color: #89ABE3FF;
+    color: #265396;
 }
 </style>
