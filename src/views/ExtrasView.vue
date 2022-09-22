@@ -76,7 +76,7 @@ export default {
 }
 #type-header {
     height: 100%;
-    color: #89ABE3FF;
+    color: #265396;
     text-align: left;
     font-weight: bold;
 }

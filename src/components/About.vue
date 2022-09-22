@@ -80,7 +80,7 @@ export default {
     height: 20%;
     font-size: 35px;
     margin-bottom: 20px;
-    color: #89ABE3FF;
+    color: #265396;
 }
 #about1box {
     height: 50%;
@@ -122,7 +122,7 @@ export default {
     margin-top: 20px;
     margin-bottom: 60px;
     right: 5%;
-    color: #89ABE3FF;
+    color: #265396;
 }
 #link {
     margin: 0px 10px 0px 10px;
