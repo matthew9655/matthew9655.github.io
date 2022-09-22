@@ -14,7 +14,7 @@
         </div>
         <br/>
         <div id="about2box">
-            <div id="about2text">
+            <div v-bind:class="{'about2text': !this.$isMobile(), 'about2textmobile': this.$isMobile()}">
                 {{ texts.about21 }}
                 <a id="sublink" target="_blank" :href="texts.link3">Alán Aspuru-Guzik</a>
                 {{ texts.about22 }}
@@ -44,6 +44,9 @@ export default {
             texts: texts,
         };
     },
+    created() {
+        console.log(this.$isMobile());
+    }
 };
 
 </script>
@@ -97,12 +100,16 @@ export default {
     height: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     width: 95%;
 }
 
-#about2text {
+.about2text {
     text-align: left;
+}
+
+.about2textmobile {
+    text-align: center;
 }
 
 #socials {

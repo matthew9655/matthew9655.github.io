@@ -6,9 +6,9 @@
         <p> {{ paper.one }}<span class="emphasized"> {{ paper.two }}</span> {{ paper.three }}
         <a id="sub-header" target="_blank" :href=paper.link>{{ paper.link }}</a></p>
         </div>
-        <br/>
     </div>
     <p id="note">This list is a little sparse right now but with a lot of hard work and some luck, it will grow.</p>
+    
 
   </div>
 </template>
@@ -54,9 +54,11 @@ export default {
     cursor: pointer;
     color: #89ABE3FF;
     text-align: left;
+    overflow-wrap: break-word;
 }
 #note {
-    text-align: left;
+    text-align: center;
+    width:50%;
 }
 
 </style>
