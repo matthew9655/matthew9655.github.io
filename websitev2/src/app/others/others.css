@@ -1,0 +1,36 @@
+#others {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #oth-main-box{
+      width: 50%;
+      height: 30%;
+  }
+  #oth-box {
+      text-align: left;
+  }
+  .emphasized { 
+      font-style: italic; 
+  }
+  #type-header {
+      height: 100%;
+      color: #265396;
+      text-align: left;
+      font-weight: bold;
+  }
+  #note {
+      text-align: left;
+  }
+  #bold {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  #sublink {
+      height: 100%;
+      cursor: pointer;
+      font-weight: bold;
+  }

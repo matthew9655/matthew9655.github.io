@@ -1,0 +1,86 @@
+#main-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 25%;
+    margin-bottom: 40px;
+}
+#text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 74%;
+    height: 100%;
+}
+#image {
+    border-radius: 50%;
+    min-width: 140px;
+    max-width: 270px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+#name {
+    width: 100%;
+    height: 20%;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #265396;
+}
+#about1box {
+    height: 50%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#about1text {
+    text-align: left;
+}
+
+#about2box {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    width: 85%;
+}
+
+.about2text {
+    text-align: left;
+}
+
+.about2textmobile {
+    text-align: center;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    right: 5%;
+    color: #265396;
+}
+#link {
+    margin: 0px 10px 0px 10px;
+    height: 100%;
+    cursor: pointer;
+}
+#sublink {
+    height: 100%;
+    cursor: pointer;
+}
+#specialsublink {
+    height: 100%;
+    cursor: pointer;
+    margin-right: -3px;
+}

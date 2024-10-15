@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --background: #ffffff; */
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #FCF9F9FF;
+    --foreground: #2c3e50;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap');
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Karla, Helvetica, sans-serif;
+  margin-top: 5%
+}
+
+a {
+  text-decoration: none;
+  color: #89ABE3FF;
+}
+a:visited {
+  color: #89ABE3FF;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
