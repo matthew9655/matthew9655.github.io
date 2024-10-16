@@ -1,13 +1,11 @@
 import React from 'react';
 import './about.css'
 import texts from '../texts/aboutTexts'
-import profilePic from '../face.jpg'
-import Image from 'next/image'
 
 export default function About() {
     return (
         <div id="main-box">
-            <Image id="image" src={profilePic} alt="Picture of the author"/>
+            <img id="image" src="/images/face.jpg" alt="Picture of the author"/>
             <div id="text-box">
                 <div id="name">{texts.name}</div>
                 <div id="about1box">

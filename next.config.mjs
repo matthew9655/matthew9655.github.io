@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/.",
-    assetPrefix:"/.",
+    experimental: {
+        appDir: true,
+      },
+    // basePath: "/.",
+    // assetPrefix:"/.",
     output: "export",
-    reactStrictMode: true,
 };
 
 export default nextConfig;
