@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/matthew9655.github.io",
-    assetPrefix:"/matthew9655.github.io/",
+    basePath: "/.",
+    assetPrefix:"/.",
     output: "export",
     reactStrictMode: true,
 };
