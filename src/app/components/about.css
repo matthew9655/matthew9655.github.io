@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 74%;
+    width: 75%;
     height: 100%;
 }
 #image {
@@ -30,11 +30,11 @@
 }
 #about1box {
     height: 50%;
-    width: 95%;
+    width: 89%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
 }
 
