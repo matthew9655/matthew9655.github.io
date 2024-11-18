@@ -11,7 +11,8 @@ const texts = {
     "about22": " During my time in school, I had software engineering internships at Zapata AI and ",
     // Modiface
     "about23": ".",
-    "about31": " These days, I am interested in AI for Science, AI safety, LLM Compression and ML Ops. In my spare time, I enjoy skiing in the winter and taking really long walks in the summer. ",
+    "about31": " These days, I am interested in AI for Science, AI safety, LLM Compression and ML Ops. In my spare time, I enjoy skiing in the winter, long walks in the summer and \
+    appreciating the little things in between.",
     "about32": " I love meeting new people so please feel free to contact me at: ",
     "link1": "https://vectorinstitute.ai/",
     "link2": "https://web.cs.toronto.edu/",
