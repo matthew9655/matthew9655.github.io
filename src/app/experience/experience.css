@@ -17,7 +17,7 @@
   }
   #type-header {
       height: 100%;
-      color: #265396;
+      color: var(--header-color);
       text-align: left;
       font-weight: bold;
   }

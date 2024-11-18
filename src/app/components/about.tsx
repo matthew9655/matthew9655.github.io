@@ -1,11 +1,35 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useState }from 'react';
 import './about.css'
 import texts from '../texts/aboutTexts'
 
 export default function About() {
+
+    // let face_src = "";
+    // const [dark, setDark] = useState()
+    // useEffect(() => {
+    //     const prefersDark = window.matchMedia(
+    //       "(prefers-color-scheme: dark)"
+    //     ).matches;
+      
+    //     if (prefersDark) {
+    //       setDark(true);
+    //     }
+    //   }, []);
+
+    // if (dark) {
+    //     face_src = "images/dark_mode_face.jpg"
+    // } else {
+    //     face_src = "images/face.jpg"
+    // }
+
     return (
         <div id="main-box">
-            <img id="image" src="/images/face.jpg" alt="Picture of the author"/>
+            <picture id="picture" >
+                <source srcSet="images/dark_mode_face.jpg" media="(prefers-color-scheme: dark)"/>
+                <img id="image" src="images/face.jpg"/>
+            </picture>
+            {/* <img id="image" src={face_src} alt="Picture of the author"/> */}
             <div id="text-box">
                 <div id="name">{texts.name}</div>
                 <div id="about1box">

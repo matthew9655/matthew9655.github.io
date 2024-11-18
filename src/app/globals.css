@@ -5,12 +5,16 @@
 :root {
   --background: #FCF9F9FF;
   --foreground: #2c3e50;
+  --text-color: #89ABE3FF;
+  --header-color: #265396;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #FCF9F9FF;
-    --foreground: #2c3e50;
+    --background: #282828;
+    --foreground: #FCF9F9BB;
+    --text-color: #db9069;
+    --header-color: #bf5922;
   }
 }
 
@@ -25,10 +29,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #89ABE3FF;
+  color: var(--text-color);
 }
 a:visited {
-  color: #89ABE3FF;
+  color: var(--text-color);
 }
 
 @layer utilities {

@@ -17,7 +17,7 @@
   #sub-header {
       height: 100%;
       cursor: pointer;
-      color: #89ABE3FF;
+      color: var(--text-color);
       text-align: left;
       overflow-wrap: break-word;
   }
