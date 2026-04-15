@@ -18,29 +18,19 @@ function getPreferredTheme(): Theme {
 }
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof document === "undefined") {
-      return "light";
-    }
-
-    return document.documentElement.dataset.theme === "dark" ? "dark" : "light";
-  });
+  const [theme, setTheme] = useState<Theme>("light");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const savedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
-    const initialTheme: Theme =
+    const resolvedTheme: Theme =
       savedTheme === "light" || savedTheme === "dark"
         ? savedTheme
         : getPreferredTheme();
 
-    const currentTheme = document.documentElement.dataset.theme;
-    if (currentTheme !== "light" && currentTheme !== "dark") {
-      document.documentElement.dataset.theme = initialTheme;
-      setTheme(initialTheme);
-      return;
-    }
-
-    setTheme(currentTheme);
+    document.documentElement.dataset.theme = resolvedTheme;
+    setTheme(resolvedTheme);
+    setMounted(true);
   }, []);
 
   const toggleTheme = () => {
@@ -49,6 +39,10 @@ export default function ThemeToggle() {
     window.localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
     setTheme(nextTheme);
   };
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <label className="theme-toggle" aria-label="Toggle light and dark mode">
