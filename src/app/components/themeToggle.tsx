@@ -18,7 +18,13 @@ function getPreferredTheme(): Theme {
 }
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof document === "undefined") {
+      return "light";
+    }
+
+    return document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+  });
 
   useEffect(() => {
     const savedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
@@ -27,8 +33,14 @@ export default function ThemeToggle() {
         ? savedTheme
         : getPreferredTheme();
 
-    document.documentElement.dataset.theme = initialTheme;
-    setTheme(initialTheme);
+    const currentTheme = document.documentElement.dataset.theme;
+    if (currentTheme !== "light" && currentTheme !== "dark") {
+      document.documentElement.dataset.theme = initialTheme;
+      setTheme(initialTheme);
+      return;
+    }
+
+    setTheme(currentTheme);
   }, []);
 
   const toggleTheme = () => {

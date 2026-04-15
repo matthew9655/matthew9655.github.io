@@ -7,8 +7,8 @@ export default function Experience() {
     <div id="experience">
         <Header />
         <div id="exp-main-box">
-            {internshipTexts.map(internship => (
-                <div id="exp-box" key="internship.title">
+            {internshipTexts.map((internship, index) => (
+                <div id="exp-box" key={`${internship.title}-${internship.date}-${index}`}>
                     <p id="type-header">{internship.title}</p>
                     <p>{internship.date}</p>
                     <ul> <li> {internship.description} </li> </ul>
