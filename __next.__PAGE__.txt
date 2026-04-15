@@ -1,0 +1,11 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0x0c4kx6_88~7.js"],""]
+3:I[58659,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0x0c4kx6_88~7.js"],"default"]
+4:I[64501,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0x0c4kx6_88~7.js"],"default"]
+5:I[97367,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+:HL["/_next/static/chunks/0wwejgue6_840.css","style"]
+:HL["/_next/static/chunks/0r~8l363mhddc.css","style"]
+:HL["/_next/static/chunks/0eae4k6dwoagy.css","style"]
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"id":"app","children":[["$","div",null,{"id":"main-header","children":[["$","div",null,{"id":"header-left-spacer","aria-hidden":"true"}],["$","div",null,{"id":"header-center","children":["$","div",null,{"id":"header-links","children":[["$","$L2",null,{"id":"sub-header","href":"/","children":"Home"}],["$","$L2",null,{"id":"sub-header","href":"/experience","children":"Experience"}],["$","$L2",null,{"id":"sub-header","href":"/papers","children":"Papers"}],["$","$L2",null,{"id":"sub-header","href":"/others","children":"Others"}],["$","a",null,{"id":"sub-header","target":"_blank","href":"/files/cv.pdf","rel":"noopener noreferrer","children":"CV"}]]}]}],["$","div",null,{"id":"theme-toggle-slot","children":["$","$L3",null,{}]}]]}],["$","$L4",null,{}]]}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0wwejgue6_840.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/0r~8l363mhddc.css","precedence":"next"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/chunks/0eae4k6dwoagy.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0x0c4kx6_88~7.js","async":true}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"hkWk1XiGW6eT4InN8oYkY"}
+7:null
