@@ -1,7 +1,17 @@
 const internshipsTexts = [
     {
+        "title": "Machine Learning Engineer, Stability AI, Remote",
+        "date": "Aug 2025 - Present",
+        "description": "text-to-image diffusion models."
+    },
+    {
+        "title": "Machine Learning Engineer, Kebotix, Remote",
+        "date": "Jan 2025 - Aug 2025",
+        "description": "LLM Agents for Chemistry Applications"
+    },
+    {
         "title": "Machine Learning Engineer, Zapata.ai, Toronto",
-        "date": "Aug 2024 - Present",
+        "date": "Aug 2024 - Oct 2024 (Shut Down Oct 2024)",
         "description": "I returned to zapata.ai as a full-time ML engineer where I am focusing on creating benchmarks for zapata's tensorization techniques for model compression."
     },
     {

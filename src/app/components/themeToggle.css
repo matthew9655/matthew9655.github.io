@@ -1,0 +1,43 @@
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--header-color);
+    user-select: none;
+}
+
+.theme-label {
+    font-size: 0.75rem;
+}
+
+.theme-toggle-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.theme-toggle-track {
+    width: 34px;
+    height: 19px;
+    border-radius: 9999px;
+    border: 1px solid var(--header-color);
+    background: color-mix(in srgb, var(--background) 85%, var(--foreground) 15%);
+    display: inline-flex;
+    align-items: center;
+    padding: 2px;
+    transition: background 0.2s ease;
+}
+
+.theme-toggle-thumb {
+    width: 13px;
+    height: 13px;
+    border-radius: 9999px;
+    background: var(--header-color);
+    transform: translateX(0);
+    transition: transform 0.2s ease;
+}
+
+.theme-toggle-input:checked + .theme-toggle-track .theme-toggle-thumb {
+    transform: translateX(15px);
+}

@@ -1,12 +1,12 @@
 import * as React from 'react';
 import About from "./components/about"
-import Options from "./options"
+import Header from "./components/header";
 import './page.css'
 
 export default function MyApp() {
   return (
     <div id="app">
-      <Options />
+      <Header />
       <About />
     </div>
   );

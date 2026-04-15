@@ -1,11 +1,11 @@
-import Options from "../options"
+import Header from "../components/header";
 import texts from '../texts/paperTexts'
 import './papers.css'
 
 export default function Papers() {
     return (
     <div id="papers">
-        <Options/>
+        <Header />
         {texts.map(paper => (
             <div id="paper-box" key={paper?.doi}>
                 <p> {paper?.authors}<span className="emphasized">{paper?.title}</span>{paper?.doi}

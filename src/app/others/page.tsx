@@ -1,4 +1,4 @@
-import Options from "../options"
+import Header from "../components/header";
 import "./others.css"
 import projectTexts from "../texts/projectTexts"
 import extracurricularTexts from "../texts/extracurricularTexts"
@@ -46,7 +46,7 @@ function MapConditional(project: any) {
 export default function Others() {
     return (
     <div id="others">
-        <Options/>
+        <Header />
         <div id="oth-main-box">
             <br/>
             <p id="type-header">Projects</p>

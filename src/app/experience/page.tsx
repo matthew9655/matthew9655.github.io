@@ -1,11 +1,11 @@
-import Options from "../options"
+import Header from "../components/header";
 import "./experience.css"
 import internshipTexts from "../texts/internshipTexts"
 
 export default function Experience() {
     return (
     <div id="experience">
-        <Options/>
+        <Header />
         <div id="exp-main-box">
             {internshipTexts.map(internship => (
                 <div id="exp-box" key="internship.title">

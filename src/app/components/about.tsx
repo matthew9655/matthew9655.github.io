@@ -1,49 +1,48 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './about.css'
 import texts from '../texts/aboutTexts'
 
 export default function About() {
+    const [theme, setTheme] = useState<'light' | 'dark'>('light');
+
+    useEffect(() => {
+        const root = document.documentElement;
+        const currentTheme = root.dataset.theme === 'dark' ? 'dark' : 'light';
+        setTheme(currentTheme);
+
+        const observer = new MutationObserver(() => {
+            setTheme(root.dataset.theme === 'dark' ? 'dark' : 'light');
+        });
+
+        observer.observe(root, {
+            attributes: true,
+            attributeFilter: ['data-theme'],
+        });
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <div id="main-box">
-            <picture id="picture" >
-                <source srcSet="images/dark_mode_face.jpg" media="(prefers-color-scheme: dark)"/>
-                <img id="image" src="images/face.jpg" alt="pic of me"/>
-            </picture>
+            <img
+                id="image"
+                src={theme === 'dark' ? 'images/dark_mode_face.jpg' : 'images/face.jpg'}
+                alt="pic of me"
+            />
             <div id="text-box">
                 <div id="name">{texts.name}</div>
                 <div id="about1box">
                     <div>
-                        {texts.about11} 
-                        <a id="sublink" target="_blank" href={texts.link1}>Vector Institute</a>
-                        {texts.about12}
-                        <a id="sublink" target="_blank" href={texts.link2}>University of Toronto </a>
-                        {texts.about13}
-                        <a id="sublink" target="_blank" href={texts.link3}>Alán Aspuru-Guzik</a>
-                        {texts.about14}
-                        {texts.about21}
-                        {texts.about22}
-                        <a id="sublink" target="_blank" href={texts.link4}>Modiface</a>
-                        {texts.about23}
-                        {texts.about31}
-                        <br/>
+                        <p>{texts.about11}</p>
+                        <p>
+                            {texts.about12}
+                            <a id="sublink" target="_top" href={texts.link}>matt.choi531@gmail.com</a>
+                        </p>
+                        <p id="about13">{texts.about13}</p>
                     </div>
                 </div>
             </div>
-            {/* <div id="about2box">
-                <div>
-                    {texts.about21}
-                    {texts.about22}
-                    <a id="sublink" target="_blank" href={texts.link4}>Modiface</a>
-                    {texts.about23}
-                    <br/> <br/>
-                    {texts.about31}
-                    {texts.about32}
-                    <a id="sublink" target="_top" href="mailto:matt.choi531@gmail.com">matt.choi531@gmail.com</a>
-                    <br/>
-                </div>
-            </div> */}
             <div id="socials">
             <a id="link" target="_blank" href="mailto:matt.choi531@gmail.com">Email</a> 
             <a id="link" target="_blank" href="https://twitter.com/matt_choi_cs">X</a>

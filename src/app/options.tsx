@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Options() {
     return (
-    <div id="main-header">
+    <div id="header-links">
         <Link id="sub-header" href="/">Home</Link>
         <Link id="sub-header" href="/experience">Experience</Link>
         <Link id="sub-header" href="/papers">Papers</Link>

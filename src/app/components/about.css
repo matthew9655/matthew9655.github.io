@@ -4,24 +4,22 @@
     align-items: center;
     width: 70%;
     height: 25%;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
 }
 #text-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 80%;
     height: 100%;
 }
 
-#picture {
+#image {
     min-width: 140px;
     max-width: 270px;
     width: 30%;
     margin-bottom: 20px;
-}
-#image {
     border-radius: 50%;    
 }
 #name {
@@ -33,17 +31,29 @@
 }
 #about1box {
     height: 50%;
-    width: 65%;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
     color: var(--foreground);
 }
 
 #about1text {
     text-align: left;
+}
+
+#about1box p {
+    margin: 0 0 14px;
+}
+
+#about1box p:last-child {
+    margin-bottom: 0;
+}
+
+#about13 {
+    font-size: 0.65rem;
 }
 
 #about2box {
@@ -71,7 +81,6 @@
     height: 10%;
     margin-top: 20px;
     margin-bottom: 60px;
-    right: 5%;
     color: var(--header-color)
 }
 #link {
